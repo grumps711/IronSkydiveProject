@@ -66,6 +66,8 @@ h5{
 .nav-bar-ul{
     width: 1200px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .nav-bar-ul li{
@@ -80,10 +82,14 @@ h5{
     background-size: cover;
     line-height: 650px;
     padding-top: 50px;
+    position: relative;
 }
 
 .quote{
     font-size: 2.5em;
+    position: absolute;
+    left: 10%;
+    bottom: 100px;
 }
 
 .dark-background{
@@ -106,6 +112,14 @@ h5{
     letter-spacing: 0.5px;
     text-align: center;
     text-decoration: none;
+    padding: 10px 30px 10px 30px;
+}
+
+#structure div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .service-box{
@@ -114,7 +128,7 @@ h5{
 }
 
 .service-box img{
-    width: 125px;
+    width: 12px;
     border: 2px solid #eee;
     border-radius: 20px;
     box-sizing: border-box;
@@ -127,6 +141,15 @@ h5{
 #team{
     padding: 75px 0;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#team div article{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 #team .section-text{
@@ -174,12 +197,19 @@ h5{
     text-align: center;
     padding: 40px 100px 40px 100px;
     margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .container{
     width: 1200px;
     margin: 0 auto;
     padding: 75px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 370px;
 }
 
 .schedule-table{
@@ -193,4 +223,9 @@ h5{
     border-color: black;
     padding: 5px 10px 5px 10px;
     text-align: center;
+}
+
+.map-frame{
+    height: 375px;
+    width: 60%;
 }
